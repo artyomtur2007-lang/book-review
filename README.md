@@ -26,8 +26,8 @@ django-filter
 
 ## **Установка и запуск проекта**
 1. Клонировать репозиторий:
-git clone https://github.com/artyomtur2007-lang/filmbook-reviews.git
-cd filmbook-reviews
+git clone https://github.com/artyomtur2007-lang/book-review.git
+cd book-review
 2. Создать и активировать виртуальное окружение:
 python -m venv .venv
 source .venv/bin/activate (Linux / macOS)
@@ -35,10 +35,11 @@ source .venv/bin/activate (Linux / macOS)
 3. Установить зависимости:
 pip install -r requirements.txt
 4. Применить миграции:
+cd review_site
 python manage.py migrate
-5. (Опционально) заполнить базу тестовыми данными:
+6. (Опционально) заполнить базу тестовыми данными:
 python manage.py seed_books
-6. Запустить сервер:
+7. Запустить сервер:
 python manage.py runserver
 После этого сайт будет доступен по адресу
 http://127.0.0.1:8000/
